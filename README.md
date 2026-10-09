@@ -13,13 +13,21 @@ Mac and run `./install.sh` to get an identical editor.
 | `extensions.txt`    | Extension IDs installed from Open VSX by `install.sh`.         |
 | `custom.css`        | Workbench chrome font fix; applied via the Custom CSS ext.     |
 | `install.sh`        | Symlinks the config into VSCodium and installs extensions.     |
+| `bootstrap.sh`      | Clone-or-update + run `install.sh` (used by the one-liner).    |
 
 ## Install on a new Mac
 
+One line (clones the repo and runs the installer):
+
 ```sh
-git clone <your-remote> ~/Projects/vscodium-config
-cd ~/Projects/vscodium-config
-./install.sh
+curl -fsSL https://raw.githubusercontent.com/Jameshudson/vscodium-config/main/bootstrap.sh | bash
+```
+
+Or manually:
+
+```sh
+git clone https://github.com/Jameshudson/vscodium-config.git ~/Projects/vscodium-config
+~/Projects/vscodium-config/install.sh
 ```
 
 `install.sh` symlinks the files into
