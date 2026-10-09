@@ -1,0 +1,11 @@
+# VSCodium extensions, one ID per line. Lines starting with # are ignored.
+# Install/refresh on a machine with:  ./install.sh
+# Export your current list with:       codium --list-extensions > extensions.txt
+#
+# Required for the custom.css chrome font fix:
+# (Open VSX fork of be5invis.vscode-custom-css; the original is not on Open VSX.)
+s-h-a-d-o-w.vscode-custom-css
+
+# Language support referenced by settings.json:
+golang.go
+ms-python.python

@@ -1,0 +1,37 @@
+/*
+ * Custom CSS for VSCodium.
+ * Applied by the "Custom CSS and JS Loader" extension
+ * (s-h-a-d-o-w.vscode-custom-css).
+ * Goal: unify workbench chrome font size with the editor (14px).
+ *
+ * After editing this file: Cmd+Shift+P -> "Reload Custom CSS and JS".
+ */
+
+/* Sidebar / Explorer / activity bar / status bar */
+.monaco-workbench .part.sidebar,
+.monaco-workbench .part.sidebar .monaco-list,
+.monaco-workbench .part.sidebar .monaco-list .monaco-list-row,
+.monaco-workbench .part.sidebar .pane-header,
+.monaco-workbench .part.activitybar,
+.monaco-workbench .part.statusbar,
+.monaco-workbench .part.statusbar .statusbar-item {
+  font-size: 14px;
+}
+
+/* Editor tabs */
+.monaco-workbench .part.editor > .content .editor-group-container > .title,
+.monaco-workbench .part.editor > .content .editor-group-container > .title .tab,
+.monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab {
+  font-size: 14px;
+}
+
+/* Panel (Problems / Output / Terminal tabs headers) */
+.monaco-workbench .part.panel .panel-switcher-container .monaco-action-bar .action-item,
+.monaco-workbench .part.panel .panel-title {
+  font-size: 14px;
+}
+
+/* Quick input / command palette */
+.monaco-workbench .quick-input-widget .quick-input-list .monaco-list-row {
+  font-size: 14px;
+}
