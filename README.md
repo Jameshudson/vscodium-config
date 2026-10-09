@@ -30,7 +30,8 @@ git clone https://github.com/Jameshudson/vscodium-config.git ~/Projects/vscodium
 ~/Projects/vscodium-config/install.sh
 ```
 
-`install.sh` symlinks the files into
+`install.sh` first checks for VSCodium and installs it via Homebrew if missing,
+then symlinks the files into
 `~/Library/Application Support/VSCodium/User/`, so `git pull` updates your
 editor immediately. Existing files are backed up with a `.bak.<timestamp>`
 suffix.
